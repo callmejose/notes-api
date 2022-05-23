@@ -2,3 +2,6 @@ GET http://localhost:3001/api/notes/
 
 ###
 GET http://localhost:3001/api/notes/1
+
+###
+GET https://notes-api.up.railway.app/api/notes

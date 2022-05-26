@@ -1,11 +1,12 @@
-require('dotenv').config()
+// require('dotenv').config()
+// console.log(process.env)
 const mongoose = require('mongoose')
-const MONGO = require('../secrets/mongoAtlas.json')
+
 
 // "URL": "mongodb+srv://api-test:${{ PASSWORD }}@cluster0.qzlffvu.mongodb.net/${{ DATABASE }}?retryWrites=true&w=majority"
 const url = (process.env.MONGODB_URI).replace(
   "${{ PASSWORD }}",
-  MONGO.PASSWORD
+  process.env.PASSWORD
 ).replace(
   "${{ DATABASE }}",
   'noteApp'
